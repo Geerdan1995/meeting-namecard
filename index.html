@@ -712,6 +712,7 @@
             .page:not(:last-child):after {
                 display: none;
             }
+
         }
         
         /* 模式一：顶部logo样式 */
@@ -1166,7 +1167,7 @@
                     leftName.style.zIndex = '2'; // 确保文字在图片上方
                     
                     // 为所有页面统一设置上方名字的位置
-                    leftName.style.top = 'calc(30% + 20mm)'; // 向下移动20毫米
+                    leftName.style.top = 'calc(30% + 17mm)'; // 向下移动20毫米
                     leftName.style.left = '50%';
                     leftName.style.width = '100%';
                     leftName.style.textAlign = 'center';
@@ -1178,7 +1179,7 @@
                     rightName.style.zIndex = '2'; // 确保文字在图片上方
                     
                     // 为所有页面统一设置下方名字的位置
-                    rightName.style.bottom = 'calc(30% + 20mm)'; // 向上移动20毫米
+                    rightName.style.bottom = 'calc(30% + 17mm)'; // 向上移动20毫米
                     rightName.style.left = '50%';
                     rightName.style.width = '100%';
                     rightName.style.textAlign = 'center';
@@ -1335,7 +1336,7 @@
                     // 添加顶部横线
                     const topLine = document.createElement('div');
                     topLine.className = 'mode4-horizontal-line';
-                    topLine.style.top = '40mm';
+                    topLine.style.top = '50mm';
                     page.appendChild(topLine);
                     
                     // 添加中间横线
@@ -1347,23 +1348,25 @@
                     // 添加底部横线
                     const bottomLine = document.createElement('div');
                     bottomLine.className = 'mode4-horizontal-line';
-                    bottomLine.style.bottom = '40mm';
+                    bottomLine.style.bottom = '50mm';
                     page.appendChild(bottomLine);
+
+                    
                     
                     // 添加左上角logo
                     const topLeftLogo = document.createElement('img');
                     topLeftLogo.src = 'INOVANCE-logo.png';
                     topLeftLogo.className = 'mode4-logo';
-                    topLeftLogo.style.top = '155mm';
-                    topLeftLogo.style.left = '12mm';
+                    topLeftLogo.style.top = '160mm';
+                    topLeftLogo.style.left = '15mm';
                     page.appendChild(topLeftLogo);
                     
                     // 添加右下角logo - 旋转180度
                     const bottomRightLogo = document.createElement('img');
                     bottomRightLogo.src = 'INOVANCE-logo.png';
                     bottomRightLogo.className = 'mode4-logo';
-                    bottomRightLogo.style.bottom = '153mm';
-                    bottomRightLogo.style.right = '12mm';
+                    bottomRightLogo.style.bottom = '160mm';
+                    bottomRightLogo.style.right = '15mm';
                     bottomRightLogo.style.transform = 'rotate(180deg)';
                     page.appendChild(bottomRightLogo);
                     
